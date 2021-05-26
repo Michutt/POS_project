@@ -2,11 +2,21 @@
 #Biblioteki zawierające potrzebne klasy, metody funkcje do działania czujników i wyświetlacza
 #
 #W tym pliku następuje inicjalizacja czujników. Znajduje się tu także nieskończona pętla w #której szczytywane są z nich informacje.
-#
+
 import adafruit_blinka
 import gpiozero
-import costam
+import library
 
+##Obiekt czujnika temperatury
+TempSensor=TempSens()
+##Obiekt czujnika ciśnienia
+PressSensor=PressSens()
+##Obiekt czujnika opadow
+RainSensor=RainSens()
+##Obiekt wyswietlacza
+Scr=Screen()
+##Obiekt czujnika wiatru
+Wind=WindSens()
 
 TempSensor.DHT11Init()
 PressSensor.BMP108Init()
